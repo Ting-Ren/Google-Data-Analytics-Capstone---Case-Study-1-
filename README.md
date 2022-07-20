@@ -7,9 +7,16 @@ Based on prior experience with MySQL and Teradata, as gain from another online c
 However, after online reseach on the accessbility of multiple SQL tools, I used SQLite to create database and start querying. This SQL platform is free but its date related syntax are different from other common SQL dialacts. Thus I switched to PostgreSQL to continue the 2 case studies. 
 
 SQL courses I completed are offered by 4 different institutions:
-1. Managing Big Data with MySQL (Duke University)
-2. Data Wrangling, Analysis and AB Testing with SQL (University of California, Davis)
-3. Tools for Exploratory Data Analysis in Business (University of Illinois at Urbana-Champaign). 
+1. Managing Big Data with MySQL, by Duke University
+
+   MySQL and Teradata are the platforms used.  
+2. Data Wrangling, Analysis and AB Testing with SQL, by University of California, Davis
+
+   Data is hosted on mode, which is very similar to the flavor of PostgreSQL.
+3. Tools for Exploratory Data Analysis in Business, by University of Illinois at Urbana-Champaign
+
    SQL is one part of the tools taught, which include Power BI and Alteryx.
-4.
+4. Google Data Analytics Certificate, by Google
+ 
+ SQL is taught using BigQuery in 3 out of the total 8 courses (course 3-5), not in a very systematic way as it is in conjunction with spreadsheet.
 
