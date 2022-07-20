@@ -1,4 +1,4 @@
-Google-Data-Analytics-Capstone--Case-Study 1 & 2
+## Google-Data-Analytics-Capstone--Case-Study 1 & 2
 
 These are case studies of MOOC Google Data Analytics Capstone Complete a Case Study, part of Google Data Analytics Certificate.
 
