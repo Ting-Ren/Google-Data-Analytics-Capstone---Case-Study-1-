@@ -18,5 +18,5 @@ SQL courses I completed are offered by 4 different institutions:
    SQL is one part of the tools taught, which include Power BI and Alteryx.
 4. Google Data Analytics Certificate, by Google
  
- SQL is taught using BigQuery in 3 out of the total 8 courses (course 3-5), not in a very systematic way as it is in conjunction with spreadsheet.
+   SQL is taught using BigQuery in 3 out of the total 8 courses (course 3-5), not in a very systematic way as it is in conjunction with spreadsheet.
 
