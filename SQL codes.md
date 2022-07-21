@@ -86,20 +86,3 @@ ORDER BY EXTRACT (EPOCH FROM (ended_at - started_at)) ASC
 GROUP BY member_casual, day_of_week
 ORDER BY day_of_week
 ```
-
-
-### number_of_rides 
-
-```SQL
-SELECT member_casual, day_of_week, COUNT(ride_id) AS numbr_of_ride, AVG(r.ride_length)
-FROM 
-(
-SELECT member_casual, day_of_week, ride_id, EXTRACT(EPOCH FROM (ended_at - started_at)) AS ride_length
-FROM divvy_bikes
-WHERE start_station_name != 'HQ QR'
-AND EXTRACT (EPOCH FROM (ended_at - started_at)) > 0
-ORDER BY EXTRACT (EPOCH FROM (ended_at - started_at)) ASC
-) r
-GROUP BY member_casual, day_of_week
-ORDER BY day_of_week
-```
