@@ -69,9 +69,9 @@ ORDER BY EXTRACT (EPOCH FROM (ended_at - started_at)) ASC
 ) r
 ```
 
-###Compare members and casual users & day_of_week 
+### Compare members and casual users & day_of_week 
 
-````SQL
+```SQL
 --number_of_rides
 
 SELECT member_casual, day_of_week, COUNT(ride_id) AS numbr_of_ride, AVG(r.ride_length)
@@ -86,6 +86,7 @@ ORDER BY EXTRACT (EPOCH FROM (ended_at - started_at)) ASC
 GROUP BY member_casual, day_of_week
 ORDER BY day_of_week
 ```
+
 
 ### number_of_rides 
 
