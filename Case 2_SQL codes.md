@@ -118,9 +118,9 @@ FROM
 	EXTRACT(HOUR FROM activityhour) AS exact_hour,
 	(CASE
 	WHEN EXTRACT(HOUR FROM activityhour) >= 6 AND EXTRACT(HOUR FROM activityhour) < 12 THEN 'morning'
-    WHEN EXTRACT(HOUR FROM activityhour) >= 12 AND EXTRACT(HOUR FROM activityhour) < 18 THEN 'afternoon'
-    WHEN EXTRACT(HOUR FROM activityhour) >= 18 AND EXTRACT(HOUR FROM activityhour) <= 21 THEN 'evening'
-    ELSE 'others'
+        WHEN EXTRACT(HOUR FROM activityhour) >= 12 AND EXTRACT(HOUR FROM activityhour) < 18 THEN 'afternoon'
+        WHEN EXTRACT(HOUR FROM activityhour) >= 18 AND EXTRACT(HOUR FROM activityhour) <= 21 THEN 'evening'
+        ELSE 'others'
 	END) AS time_of_day,
 	sum(totalintensity) AS total_intensity,
     SUM(averageintensity) AS total_average_intensity,
@@ -139,12 +139,12 @@ FROM
     4,
     5,
     6) AS user_dow_summary 
-	GROUP BY 
-	dow_number,
-    part_of_week,
-	day_of_week,
-	time_of_day,
-	totalintensity
+ GROUP BY 
+   dow_number,
+   part_of_week,
+   day_of_week,
+   time_of_day,
+   totalintensity
 ```
 
 
