@@ -123,22 +123,23 @@ FROM
         ELSE 'others'
 	END) AS time_of_day,
 	sum(totalintensity) AS total_intensity,
-    SUM(averageintensity) AS total_average_intensity,
-    AVG(averageintensity) AS average_intensity,
-    MAX(averageintensity) AS max_intensity,
-    MIN(averageintensity) AS min_intensity
+        SUM(averageintensity) AS total_average_intensity,
+        AVG(averageintensity) AS average_intensity,
+        MAX(averageintensity) AS max_intensity,
+        MIN(averageintensity) AS min_intensity
 
 --(CASE WHEN EXTRACT(HOUR FROM activityhour) != 0 THEN (SUM(averageintensity)/EXTRACT(HOUR FROM activityhour))
 --ELSE 0
 --END) AS averageintensity_by---compare average not working tho
-    FROM public."hourlyIntensities_merged"
-    GROUP BY
-    1,
-    2,
-    3,
-    4,
-    5,
-    6) AS user_dow_summary 
+
+        FROM public."hourlyIntensities_merged"
+        GROUP BY
+        1,
+        2,
+        3,
+        4,
+        5,
+        6) AS user_dow_summary 
  GROUP BY 
    dow_number,
    part_of_week,
