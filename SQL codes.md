@@ -47,9 +47,24 @@ SET
 member_casual= replace(member_casual, 'Customer', 'casual') 
 ```
 
-### Update data
+### Update date
 
 ```SQL
 UPDATE divvy_bikes
 SET day_of_week = (EXTRACT(ISODOW FROM started_at));
+```
+
+### Descriptive analysis on ride_length
+
+```SQL
+SELECT AVG(r.ride_length), MAX(r.ride_length), MIN(r.ride_length),
+PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER by r.ride_length) AS median
+FROM 
+(
+SELECT EXTRACT(EPOCH FROM (ended_at - started_at)) AS ride_length
+FROM divvy_bikes
+WHERE start_station_name != 'HQ QR'
+AND EXTRACT (EPOCH FROM (ended_at - started_at)) > 0
+ORDER BY EXTRACT (EPOCH FROM (ended_at - started_at)) ASC
+) r
 ```
