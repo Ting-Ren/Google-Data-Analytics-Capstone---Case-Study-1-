@@ -1,5 +1,5 @@
 ### Divvy_Exercise_Full_Y ear_Analysis ###
-### This analysis is based on the Divvy case study "'Sophisticated, Clear , and Polished’: Divvy and Data Visualization" written by Kevin Hartman (found here:
+#### This analysis is based on the Divvy case study "'Sophisticated, Clear , and Polished’: Divvy and Data Visualization" written by Kevin Hartman (found here:
 https://artscience.blog/home/divvy-dataviz-case-study). 
 
 ### Create full year table
