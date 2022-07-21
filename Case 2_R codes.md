@@ -1,5 +1,7 @@
 ### R code for basic visualization
 
+View plots via Kaggle notebook https://www.kaggle.com/code/tingrentr/google-data-analytics-capstone-case-study 
+
 ```R
 library(tidyverse)
 daily_activity<- read.csv("dailyActivity_merged.csv")
