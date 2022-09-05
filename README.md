@@ -2,7 +2,7 @@
 
 These are case studies of MOOC Google Data Analytics Capstone Complete a Case Study, part of Google Data Analytics Certificate.
 
-Based on prior experience with MySQL and Teradata, as gain from another online course, Managing Big Data with MySQL, which by the way I personally feel is the best SQL course for beginners that I have taken, with considerable practice to advance query skills. 
+Based on prior experience with MySQL and Teradata, as gained from another online course, Managing Big Data with MySQL, which by the way I personally feel is the best SQL course for beginners that I have taken, with considerable practice to advance query skills. 
 
 However, after online reseach on the accessbility of multiple SQL tools, I used SQLite to create database and start querying. This SQL platform is free but its date related syntax are different from other common SQL dialacts. Thus I switched to PostgreSQL to continue the 2 case studies. 
 
