@@ -13,6 +13,11 @@ SQL courses I completed are offered by 4 different institutions:
 2. Data Wrangling, Analysis and AB Testing with SQL, by University of California, Davis
 
    Data is hosted on mode, which is very similar to the flavor of PostgreSQL.
+   
+   Distributed Computing with Spark SQL, University of California, Davis
+   
+   This course is offered by Databricks, an introduction to the Spark platform. 
+   
 3. Tools for Exploratory Data Analysis in Business, by University of Illinois at Urbana-Champaign
 
    SQL is one part of the tools taught, which include Power BI and Alteryx.
